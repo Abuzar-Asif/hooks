@@ -1,7 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-
+import Create from './Create'
+  
 const CrudReduxToolkit = () => {
 const boy=useSelector((state)=>state.boy)
 console.log(`hellow this `)
