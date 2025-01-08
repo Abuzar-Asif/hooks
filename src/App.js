@@ -6,6 +6,9 @@ const App = () => {
       <h1>
         hellow this is all about hooks 
       </h1>
+      <p>
+        loremajnansjansjnajsnajsnjansj
+      </p>
     </>
   )
 }
