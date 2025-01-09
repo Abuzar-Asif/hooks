@@ -1,9 +1,11 @@
 import React from 'react'
-import CrudReduxToolkit from './CrudReduxToolkit'
+import Main from './ReactRouter/Main'
+// import CrudReduxToolkit from './CrudReduxToolkit'
 // import UseFormikprac from './UseFormikprac'
 // import { BrowserRouter,Routes, Route  } from 'react-router-dom'
-import Create from './Create'
-import Todo from './TodoList/Todo'
+// import Create from './Create'
+// import Todo from './TodoList/Todo'
+// import PracticeTodo from './PracticeTodo'
 
 const App = () => {
   return (
@@ -16,7 +18,9 @@ const App = () => {
 <Route path='/Create' element={<Create/>}/>
 </Routes>
 </BrowserRouter> */}
-<Todo/>
+{/* <Todo/> */}
+{/* <PracticeTodo/> */}
+<Main/>
 
     </>
   )
