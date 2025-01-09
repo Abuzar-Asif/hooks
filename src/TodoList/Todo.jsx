@@ -15,12 +15,12 @@ const Todo = () => {
         return updatedlist
     })
     }
-//     const Removebtn=(i)=>{
-// const updatedlist = listdata.filter((cval,ind)=>{
-//                  return i !=ind
-//                     })
-//                         setlistdata(updatedlist)
-//     }
+    const Removebtn=(i)=>{
+const updatedlist = listdata.filter((cval,ind)=>{
+                 return i !==ind
+                    })
+                        setlistdata(updatedlist)
+    }
   return (
     <>
       <div className='d-flex w-100 vh-100 justify-content-center align-items-center '>
@@ -35,10 +35,10 @@ const Todo = () => {
                         {listdata!=[]&&listdata.map((cval,i)=>(
                        <p key={i}>
                                     {cval}
-                             {/* <button  onClick={Removebtn(i)} className='btn btn-danger'>
-                                Remove
-                                </button>      */}
-                                {listdata.length>1 &&
+                                   <button  onClick={()=>Removebtn(i)} className='btn btn-danger'>
+                                  Remove
+                                </button>     
+                                {listdata.length>=1 &&
                                 <button onClick={RemoveAll}>Remove All</button>
                                 }  
                             </p>
